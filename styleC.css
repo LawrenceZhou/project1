@@ -1,0 +1,59 @@
+/*----------StyleC.css-----------*/
+/*---------CS142 Stanford--------*/
+/*-----------Project 1-----------*/
+/*created by Yijun(Lawrence) Zhou*/
+/*--------yiz@stanford.edu-------*/
+/*----------Jan 18, 2017---------*/
+
+/*normalbox is for A, B, C, D, E*/
+/*with effect gradient*/
+.normalbox{
+  display:block;
+  width: 100px;
+  min-height: 100px;
+  height: 100px;
+  padding: 0;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #687291;
+  font-family: Tahoma;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  background: linear-gradient(red, #eeeff2);
+  transition: width 2s;
+}
+
+/*hover effect, shadow and transient*/
+.normalbox:hover {
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*content below is the same with StyleA.css*/
+.lastbox {
+  display:block;
+  background-color: #687291;
+  line-height: 100px;
+  padding: 0;
+  width: 100px;
+  min-height: 100px;
+  height: 100px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+  font-family: Tahoma;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+}
+
+.boxcontainer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+html,body { 
+  height:100%;
+}
